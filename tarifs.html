@@ -1,24 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarifs</title>
     <!-- Bootstrap 5 via CDN : feuille de style -->
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Le contenu de la page sera ajoute ici -->
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">AfriTalent</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <button class="btn btn-outline-success" type="submit">Rejoindre AfriTalent</button>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <!-- TARIFS -->
+    <main>
 
-    <!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-    <!-- Votre script JavaScript --> 
+
+        <div>
+
+            <!-- SECTION TARIFS -->
+            <h2 class="section-title">Nos plans tarifaires</h2>
+            <div class="pricing-grid">
+
+                <!-- Gratuit -->
+                <div class="price-card">
+                    <h3 class="plan-name">Gratuit</h3>
+                    <div class="plan-price">0f<span>/mois</span></div>
+                    <ul class="feature-list">
+                        <li><span class="icon-check">✔</span> Création de profil</li>
+                        <li><span class="icon-check">✔</span> Accès aux missions publiques</li>
+                        <li class="disabled"><span class="icon-cross">✖</span> Mise en avant du profil</li>
+                        <li class="disabled"><span class="icon-cross">✖</span> Support prioritaire</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Commencer gratuitement</a>
+                </div>
+
+                <!-- Pro (Recommandé) -->
+                <div class="price-card popular">
+                    <span class="popular-badge">Populaire</span>
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price">50000f<span>/mois</span></div>
+                    <ul class="feature-list">
+                        <li><span class="icon-check">✔</span> Tous les avantages gratuits</li>
+                        <li><span class="icon-check">✔</span> Badge "Profil Vérifié"</li>
+                        <li><span class="icon-check">✔</span> Accès aux missions premium</li>
+                        <li><span class="icon-check">✔</span> Support client sous 24h</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Devenir Pro</a>
+                </div>
+
+                <!-- Entreprise -->
+                <div class="price-card">
+                    <h3 class="plan-name">Entreprise</h3>
+                    <div class="plan-price">80000f<span>/mois</span></div>
+                    <ul class="feature-list">
+                        <li><span class="icon-check">✔</span> Accès multi-comptes</li>
+                        <li><span class="icon-check">✔</span> Gestionnaire de compte dédié</li>
+                        <li><span class="icon-check">✔</span> Outils avancés de facturation</li>
+                        <li><span class="icon-check">✔</span> API de recrutement personnalisée</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Contacter l'équipe</a>
+                </div>
+            </div>
+
+            <!-- SECTION FAQ -->
+            <h2 class="section-title">Foire aux questions</h2>
+            <div class="faq-section">
+
+                <!-- Q1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Comment s'effectuent les paiements ?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Tous les paiements sont sécurisés et bloqués sur un compte tiers (séquestre). L'argent n'est
+                            débloqué au freelance que lorsque vous validez le livrable de la mission.</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Puis-je changer de plan à tout moment ?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Oui, vous pouvez passer au forfait supérieur ou inférieur, ou résilier votre abonnement à
+                            tout moment depuis les paramètres de votre compte, sans aucun frais caché.</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Comment sont vérifiés les profils des freelances ?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Notre équipe contrôle systématiquement l'identité, les diplômes ou les références de nos
+                            freelances. Les profils bénéficiant du badge "Vérifié" ont passé des tests techniques
+                            rigoureux.</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Y a-t-il des frais de commission sur les missions ?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Pour le plan gratuit, nous prélevons une commission de 10% sur le montant HT de la mission.
+                            Cette commission est réduite à 5% pour les membres Pro et Entreprise.</p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Proposez-vous un accompagnement pour les entreprises ?
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Absolument. Avec le plan Entreprise, vous bénéficiez d'un conseiller dédié qui vous aide à
+                            rédiger vos cahiers des charges et effectue une pré-sélection des meilleurs profils pour
+                            vous.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container py-4">
+            <p>&copy; 2026 AfriTalent. Tous droits reserves.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,24 +1,226 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelances</title>
     <!-- Bootstrap 5 via CDN : feuille de style -->
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Le contenu de la page sera ajoute ici -->
 
-    <!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-    <!-- Votre script JavaScript --> 
+<body>
+
+    <!-- Le contenu de la page sera ajoute ici -->
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">AfriTalent</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <button class="btn btn-outline-success" type="submit">Rejoindre AfriTalent</button>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+
+        <div class="profiles-grid">
+
+            <!-- Freelance 1 (Dev) -->
+            <div class="profile-card" data-cat="dev">
+                <div class="card-header">
+                    <img src="Images/temoin1hom.jpg" alt="Idris" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Idris M.</h3>
+                        <div class="specialty">Développement Web</div>
+                    </div>
+                </div>
+                <p class="bio">Expert Fullstack spécialisé en React et Node.js. J'accompagne les startups dans la
+                    création de leurs MVP.</p>
+                <div class="card-footer">
+                    <div class="price">35000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.9 <span>(42)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 2 (Design) -->
+            <div class="profile-card" data-cat="design">
+                <div class="card-header">
+                    <img src="Images/temoin1fem.jpg" alt="Fatou" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Fatou K.</h3>
+                        <div class="specialty">Design UI/UX</div>
+                    </div>
+                </div>
+                <p class="bio">Product designer. Je conçois des interfaces mobiles épurées et centrées sur l'expérience
+                    utilisateur.</p>
+                <div class="card-footer">
+                    <div class="price">40000f<span>/h</span></div>
+                    <div class="rating">⭐ 5.0 <span>(28)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 3 (Marketing) -->
+            <div class="profile-card" data-cat="marketing">
+                <div class="card-header">
+                    <img src="Images/temoin2hom.jpg" alt="Youssef" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Youssef B.</h3>
+                        <div class="specialty">Marketing Digital</div>
+                    </div>
+                </div>
+                <p class="bio">Growth Hacker et expert SEO. Je booste l'acquisition client de vos plateformes
+                    e-commerce.</p>
+                <div class="card-footer">
+                    <div class="price">30000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.7 <span>(35)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 4 (Data) -->
+            <div class="profile-card" data-cat="data">
+                <div class="card-header">
+                    <img src="Images/temoin2fem.jpg" alt="Aminata" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Aminata D.</h3>
+                        <div class="specialty">Data & IA</div>
+                    </div>
+                </div>
+                <p class="bio">Data Scientist experte en Python et Machine Learning. J'aide à modéliser et analyser vos
+                    données business.</p>
+                <div class="card-footer">
+                    <div class="price">42000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.8 <span>(19)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 5 (Dev) -->
+            <div class="profile-card" data-cat="dev">
+                <div class="card-header">
+                    <img src="Images/temoin3hom.jpg" alt="Koffi" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Koffi A.</h3>
+                        <div class="specialty">Développement Web</div>
+                    </div>
+                </div>
+                <p class="bio">Développeur front-end chevronné (Vue.js / Tailwind). J'adore transformer des maquettes
+                    complexes en sites fluides.</p>
+                <div class="card-footer">
+                    <div class="price">37000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.9 <span>(51)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 6 (Design) -->
+            <div class="profile-card" data-cat="design">
+                <div class="card-header">
+                    <img src="Images/temoin3fem.jpg" alt="Aïcha" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Aïcha T.</h3>
+                        <div class="specialty">Design UI/UX</div>
+                    </div>
+                </div>
+                <p class="bio">Illustratrice et UI designer. Je crée des identités visuelles fortes et mémorables pour
+                    vos marques.</p>
+                <div class="card-footer">
+                    <div class="price">47000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.6 <span>(14)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 7 (Dev) -->
+            <div class="profile-card" data-cat="dev">
+                <div class="card-header">
+                    <img src="Images/temoin4hom.jpg" alt="Samuel" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Samuel O.</h3>
+                        <div class="specialty">Développement Web</div>
+                    </div>
+                </div>
+                <p class="bio">Spécialiste WordPress et Shopify. Je crée des boutiques en ligne ultra-rapides et
+                    optimisées pour la vente.</p>
+                <div class="card-footer">
+                    <div class="price">33000f<span>/h</span></div>
+                    <div class="rating">⭐ 4.8 <span>(67)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 8 (Marketing) -->
+            <div class="profile-card" data-cat="marketing">
+                <div class="card-header">
+                    <img src="Images/temoin5hom.jpg" alt="Zineb" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Zineb H.</h3>
+                        <div class="specialty">Marketing Digital</div>
+                    </div>
+                </div>
+                <p class="bio">Media Buyer (Facebook/Google Ads). J'optimise vos campagnes publicitaires pour un ROI
+                    maximal.</p>
+                <div class="card-footer">
+                    <div class="price">44500f<span>/h</span></div>
+                    <div class="rating">⭐ 4.9 <span>(22)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+            <!-- Freelance 9 (Data) -->
+            <div class="profile-card" data-cat="data">
+                <div class="card-header">
+                    <img src="Images/temoin6hm.jpg" alt="Ousmane" width="25%" class="avatar">
+                    <div>
+                        <h3 class="freelance-name">Ousmane S.</h3>
+                        <div class="specialty">Data & IA</div>
+                    </div>
+                </div>
+                <p class="bio">Ingénieur IA. J'intègre des solutions de traitement automatique du langage (NLP) dans vos
+                    outils métiers.</p>
+                <div class="card-footer">
+                    <div class="price">50750f<span>/h</span></div>
+                    <div class="rating">⭐ 5.0 <span>(11)</span></div>
+                </div>
+                <a href="#" class="btn-profile">Voir le profil</a>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container py-4">
+            <p>&copy; 2026 AfriTalent. Tous droits reserves.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,24 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <!-- Bootstrap 5 via CDN : feuille de style -->
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Le contenu de la page sera ajoute ici -->
 
-    <!-- Bootstrap 5 via CDN : script JavaScript --> 
-    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-    <!-- Votre script JavaScript --> 
+<body>
+
+    <!-- Le contenu de la page sera ajoute ici -->
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">AfriTalent</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <button class="btn btn-outline-success" type="submit">Rejoindre AfriTalent</button>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div >
+            <div >
+
+                <!-- Formulaire de contact -->
+                <div>
+                    <div >
+                        <div id="success-msg" >
+                            <div class="display-1 text-success mb-3">✓</div>
+                            <h3>Message envoyé !</h3>
+                            <p class="text-muted">Merci, nous vous répondrons dans les plus brefs délais.</p>
+                            <button class="btn btn-outline-primary mt-3" onclick="location.reload()">Nouveau
+                                message</button>
+                        </div>
+
+                        <form >
+                            <h2 class="mb-4">Écrivez-nous</h2>
+                            <div>
+                                <div>
+                                    <label for="prenom" class="form-label">Prénom</label>
+                                    <input type="text" id="prenom" class="form-control" placeholder="Jean">
+                                    <div class="invalid-feedback">Le prénom est requis.</div>
+                                </div>
+                                <div>
+                                    <label for="nom" class="form-label">Nom</label>
+                                    <input type="text" id="nom" class="form-control" placeholder="Dupont">
+                                    <div class="invalid-feedback">Le nom est requis.</div>
+                                </div>
+                            </div>
+
+                            <div >
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="nom@exemple.com">
+                                <div class="invalid-feedback">Veuillez entrer un email valide.</div>
+                            </div>
+
+                            <div >
+                                <label for="sujet" class="form-label">Sujet</label>
+                                <select id="sujet" class="form-select">
+                                    <option value="">-- Sélectionnez un sujet --</option>
+                                    <option value="support">Support Technique</option>
+                                    <option value="vente">Demande Commerciale</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                                <div class="invalid-feedback">Veuillez choisir un sujet.</div>
+                            </div>
+
+                            <div >
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-control" rows="5"
+                                    placeholder="Votre message..."></textarea>
+                                <div class="invalid-feedback">Le message doit faire au moins 20 caractères.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Infos & Google Maps -->
+                <div>
+                    <div >
+                        <h4 class="mb-4 text-primary">Informations de contact</h4>
+                        <div class="mb-3 d-flex align-items-center">
+                            <span class="fs-4 me-3">📍</span>
+                            <span>123 Boulevard de l'Innovation, 75017 Paris</span>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <span class="fs-4 me-3">📞</span>
+                            <span>+33 1 45 67 89 00</span>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center">
+                            <span class="fs-4 me-3">✉️</span>
+                            <span>contact@startup-fictive.fr</span>
+                        </div>
+                        <hr class="my-4 opacity-25">
+                        <p class="small text-light opacity-75">Ouvert du lundi au vendredi, de 9h à 18h.</p>
+                    </div>
+
+                    <div class="shadow-sm overflow-hidden rounded">
+                        <iframe src="https://google.com" width="100%" height="300" style="border:0;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pied de page -->
+            <footer >
+                <div >
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-primary mb-3">
+                                <i class="bi bi-lightbulb-fill me-2"></i>AfriTalent
+                            </h5>
+                            <p >
+                                Connecter les talents africains avec les opportunités mondiales. Nous bâtissons l'avenir
+                                du recrutement sur le continent.
+                            </p>
+                            <div>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Colonne 2: Liens utiles -->
+                        <div >
+                            <h5 class="mb-3">Liens utiles</h5>
+                            <ul >
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Accueil</a>
+                                </li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">À propos</a>
+                                </li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Offres
+                                        d'emploi</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Entreprises</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Colonne 3: Ressources -->
+                        <div >
+                            <h5 class="mb-3">Ressources</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#"class="tex">Blog</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Guide
+                                        Carrière</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
+                                <li class="mb-2"><a href="#"
+                                        class="text-secondary text-decoration-none">Partenariats</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Colonne 4: Contact -->
+                        <div >
+                            <h5 class="mb-3">Contact</h5>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2"><i ></i> Dakar, Sénégal</li>
+                                <li class="mb-2"><i ></i> contact@afritalent.com</li>
+                                <li class="mb-2"><i ></i> +221 33 123 45 67</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <hr class="mt-5 mb-4 border-secondary">
+
+                    <div class="text-center small text-secondary">
+                        &copy; 2026 AfriTalent. Tous droits réservés.
+                    </div>
+                </div>
+            </footer>
+
+    </main>
+
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
