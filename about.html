@@ -8,6 +8,9 @@
     <!-- Bootstrap 5 via CDN : feuille de style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre feuille de style personnelle -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,174 +19,193 @@
     <!-- Le contenu de la page sera ajoute ici -->
     <!-- HEADER -->
     <header>
-        <nav>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">AfriTalent</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-                        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navMenu">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                        <button class="btn btn-outline-success" type="submit">Rejoindre AfriTalent</button>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+               <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px" height="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="btn btn-outline-primary" type="submit"> <a href="contact.html">Rejoindre AfriTalent</a></button>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
     <main>
         <!-- Section : Notre Histoire -->
-        <section>
-            <div>
-                <div>
-                    <h2>Notre Histoire</h2>
-                    <p>Fondée en 2010, notre aventure a commencé dans un petit garage avec une idée simple :
-                        révolutionner notre secteur.</p>
-                    <p>Au fil des années, nous avons grandi pour devenir une équipe passionnée de plus de 1500 experts.
-                        Notre parcours est marqué par des défis relevés et une volonté constante de repousser les
-                        limites de la créativité et de la technologie.</p>
-                </div>
-                <div>
-                    <img src="Images/histoire.jpg" alt="Notre équipe au travail" width="25%"
-                        class="img-fluid rounded shadow shadow-lg">
-                </div>
-            </div>
-        </section>
-
-        <!-- Section : Nos Valeurs -->
-        <section class="bg-custom">
-            <div>
-                <h2>Nos Valeurs</h2>
-                <div class="row g-4">
-                    <!-- Valeur 1 -->
-                    <div>
-                        <div class="p-4 bg-white rounded shadow-sm h-100">
-                            <i class="bi bi-lightbulb icon-value mb-3"></i>
-                            <h5>Innovation</h5>
-                            <p class="small text-muted">Nous cherchons sans cesse de nouvelles manières de résoudre les
-                                problèmes complexes.</p>
-                        </div>
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <h2 class="h2r mb-4">Notre Histoire</h2>
+                        <p class="lead text-muted">Fondée en 2010, notre aventure a commencé avec une idée simple :
+                            révolutionner le recrutement et le freelancing sur le continent africain.</p>
+                        <p>Au fil des années, nous avons grandi pour devenir une équipe passionnée de plus de 1500
+                            experts. Notre parcours est marqué par des défis relevés et une volonté constante de
+                            repousser les limites de la créativité et de la technologie.</p>
                     </div>
-                    <!-- Valeur 2 -->
-                    <div>
-                        <div class="p-4 bg-white rounded shadow-sm h-100">
-                            <i class="bi bi-universal-access icon-value mb-3"></i>
-                            <h5>Accessibilité</h5>
-                            <p class="small text-muted">Nos produits sont conçus pour être utilisés par tout le monde,
-                                sans exception.</p>
-                        </div>
-                    </div>
-                    <!-- Valeur 3 -->
-                    <div>
-                        <div class="p-4 bg-white rounded shadow-sm h-100">
-                            <i class="bi bi-people icon-value mb-3"></i>
-                            <h5>Communauté</h5>
-                            <p class="small text-muted">Nous plaçons l'humain et l'entraide au cœur de toutes nos
-                                décisions.</p>
-                        </div>
-                    </div>
-                    <!-- Valeur 4 -->
-                    <div>
-                        <div class="p-4 bg-white rounded shadow-sm h-100">
-                            <i class="bi bi-gem icon-value mb-3"></i>
-                            <h5>Excellence</h5>
-                            <p class="small text-muted">Nous visons la plus haute qualité dans chaque détail de nos
-                                réalisations.</p>
-                        </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="Images/histoire.jpg" alt="Notre équipe au travail"
+                            class="img-fluid rounded shadow-lg w-100">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section : L'équipe -->
-        <section>
-            <h2>L'Équipe</h2>
-            <div>
-                <!-- Membre 1 -->
-                <div>
-                    <div class="card border-0 shadow-sm card-team">
-                        <img src="Images/membre2.jpg" class="card-img-top" alt="Membre équipe" >
-                        <div class="card-body">
-                            <h5 class="card-title">Alice Martin</h5>
-                            <p class="text-primary fw-bold">CEO & Fondatrice</p>
-                            <div class="d-flex justify-content-center gap-3">
-                                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="h2d text-center mb-5">L'Équipe</h2>
+                <div class="row g-4">
+                    <!-- Membre 1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100 text-center card-team">
+                            <img src="Images/membre2.jpg" class="card-img-top" alt="Alice Martin">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Alice Martin</h5>
+                                <p class="text-success small fw-bold">CEO & Fondatrice</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-twitter-x"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Membre 2 -->
-                <div>
-                    <div>
-                        <img src="Images/membre1.jpg" class="card-img-top" alt="Membre équipe" >
-
-                        <div class="card-body">
-                            <h5 class="card-title">Marc Durand</h5>
-                            <p class="text-primary fw-bold">Directeur Technique</p>
-                            <div class="d-flex justify-content-center gap-3">
-                                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                    <!-- Membre 2 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100 text-center card-team">
+                            <img src="Images/membre1.jpg" class="card-img-top" alt="Marc Durand">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Marc Durand</h5>
+                                <p class="text-success small fw-bold">Directeur Technique</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-github"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Membre 3 -->
-                <div>
-                    <div>
-                        <img src="Images/membre4.jpg" class="card-img-top" alt="Membre équipe" >
-                        <div class="card-body">
-                            <h5 class="card-title">Sophie Leroy</h5>
-                            <p class="text-primary fw-bold">UX Designer</p>
-                            <div class="d-flex justify-content-center gap-3">
-                                <a href="#" class="text-dark"><i class="bi bi-behance"></i></a>
-                                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                    <!-- Membre 3 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100 text-center card-team">
+                            <img src="Images/membre4.jpg" class="card-img-top" alt="Sophie Leroy">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Sophie Leroy</h5>
+                                <p class="text-success small fw-bold">UX Designer</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-behance"></i></a>
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Membre 4 -->
-                <div>
-                    <div>
-                        <img src="Images/membre3.jpg" class="card-img-top" alt="Membre équipe">
-                        <div class="card-body">
-                            <h5 class="card-title">Thomas Petit</h5>
-                            <p class="text-primary fw-bold">Responsable Marketing</p>
-                            <div class="d-flex justify-content-center gap-3">
-                                <a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+                    <!-- Membre 4 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100 text-center card-team">
+                            <img src="Images/membre3.jpg" class="card-img-top" alt="Thomas Petit">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Thomas Petit</h5>
+                                <p class="text-success small fw-bold">Responsable Marketing</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bento-stats">
-            <div class="bento-grid">
-                <!-- Tuile Large -->
-                <div class="bento-item tall">
-                    <h3>Projets Réalisés</h3>
-                    <span class="counter" data-target="150">0</span>
+
+        <!-- Section : Nos Valeurs -->
+        <section class="py-5 bg-">
+            <div class="container">
+                <h2 class="h2d text-center mb-5">Nos Valeurs</h2>
+                <div class="row g-4">
+                    <!-- Valeur 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                            <i class="bi bi-lightbulb text-success fs-1 mb-3 d-block"></i>
+                            <h5 class="fw-bold mb-3">Innovation</h5>
+                            <p class="small text-muted mb-0">Nous cherchons sans cesse de nouvelles manières de
+                                résoudre les problèmes complexes.</p>
+                        </div>
+                    </div>
+                    <!-- Valeur 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                            <i class="bi bi-universal-access text-success fs-1 mb-3 d-block"></i>
+                            <h5 class="fw-bold mb-3">Accessibilité</h5>
+                            <p class="small text-muted mb-0">Nos produits sont conçus pour être utilisés par tout le
+                                monde, sans exception.</p>
+                        </div>
+                    </div>
+                    <!-- Valeur 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                            <i class="bi bi-people text-success fs-1 mb-3 d-block"></i>
+                            <h5 class="fw-bold mb-3">Communauté</h5>
+                            <p class="small text-muted mb-0">Nous plaçons l'humain et l'entraide au cœur de toutes
+                                nos décisions.</p>
+                        </div>
+                    </div>
+                    <!-- Valeur 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                            <i class="bi bi-gem text-success fs-1 mb-3 d-block"></i>
+                            <h5 class="fw-bold mb-3">Excellence</h5>
+                            <p class="small text-muted mb-0">Nous visons la plus haute qualité dans chaque détail de
+                                nos réalisations.</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Tuiles Standard -->
-                <div class="bento-item">
-                    <h3>Clients Satisfaits</h3>
-                    <span class="counter" data-target="98">0</span>%
-                </div>
-                <div class="bento-item wide">
-                    <h3>Lignes de Code</h3>
-                    <span class="counter" data-target="50000">0</span>+
-                </div>
-                <div class="bento-item">
-                    <h3>Cafés Bus</h3>
-                    <span class="counter" data-target="1200">0</span>
+            </div>
+        </section>
+
+
+
+        <!-- Section : Bento Grid Stats -->
+        <section class="py-5 bg-light bento-stats">
+            <div class="container">
+                <h2 class="text-center mb-5">Quelques chiffres</h2>
+                <div class="bento-grid">
+                    <!-- Tuile Large/Haute -->
+                    <div
+                        class="bento-item tall bg-white p-4 rounded shadow-sm d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="h5 text-muted">Projets Réalisés</h3>
+                        <span class="counter display-4 fw-bold text-primary" data-target="150">0</span>
+                    </div>
+                    <!-- Tuiles Standard -->
+                    <div
+                        class="bento-item bg-white p-4 rounded shadow-sm d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="h5 text-muted">Clients Satisfaits</h3>
+                        <div class="d-flex align-items-baseline">
+                            <span class="counter display-4 fw-bold text-primary" data-target="98">0</span>
+                            <span class="fs-3 fw-bold text-primary">%</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bento-item wide bg-white p-4 rounded shadow-sm d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="h5 text-muted">Lignes de Code</h3>
+                        <div class="d-flex align-items-baseline">
+                            <span class="counter display-4 fw-bold text-primary" data-target="50000">0</span>
+                            <span class="fs-3 fw-bold text-primary">+</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bento-item bg-white p-4 rounded shadow-sm d-flex flex-column justify-content-center align-items-center">
+                        <h3 class="h5 text-muted">Cafés Bus</h3>
+                        <span class="counter display-4 fw-bold text-primary" data-target="1200">0</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -192,8 +214,10 @@
 
     <!-- Pied de page -->
     <footer>
-        <div class="container py-4">
-            <p>&copy; 2026 AfriTalent. Tous droits reserves.</p>
+        <hr class="mt-5 mb-4 border-secondary">
+
+        <div class="text-center small text-secondary">
+            &copy; 2026 AfriTalent. Tous droits réservés.
         </div>
     </footer>
 

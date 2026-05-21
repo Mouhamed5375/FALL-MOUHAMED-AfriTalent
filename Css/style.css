@@ -1,0 +1,96 @@
+:root {
+    /* les couleurs */
+    --bg-primary:white;
+    --bg-card: #161B22;
+    --accent-color: #ffffff;
+    --secondary-color: #2EC4B6;
+    --text-main: #2358dd;
+    --text-muted: #e0761a; 
+
+    /* espacements */
+    --space-xs: 0.25rem;       
+    --space-sm: 0.5rem;        
+    --space-md: 1rem;          
+    --space-lg: 1.5rem;        
+    --space-xl: 2rem;          
+    --space-xxl: 4rem;         
+
+    /* les polices */
+    --font-title: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* autre */
+    --border-radius-sm: 8px;   
+    --border-radius-lg: 16px; 
+
+    --transition-fast: 0.2s ease;                       
+    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+}
+
+/* le reset */
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- 1. STYLES GÉNÉRAUX --- */
+body {
+    background-color: var(--bg-primary); 
+    color: var(--text-main);
+    font-family: var(--font-body);
+    text-align: justify;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: medium;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+p {
+    color: var(--text-muted);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--secondary-color); /
+}
+
+/* --- 2. NAVIGATION (NAVBAR) --- */
+.navbar {
+    background-color: rgb(0, 0, 0) ;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(243, 243, 244, 0.979);
+    padding: var(--space-md) 0;
+    transition: var(--transition-smooth);
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: var(--font-title);
+    font-weight: 800;
+    color: var(--text-main) ;
+}
+
+.nav-link {
+    color: white ;
+    font-weight: 500;
+    padding: var(--space-sm) var(--space-md) ;
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover {
+    color: var(--accent-color) ;
+}
+
+

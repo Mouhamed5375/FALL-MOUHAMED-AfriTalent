@@ -8,6 +8,10 @@
     <!-- Bootstrap 5 via CDN : feuille de style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre feuille de style personnelle -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,26 +19,26 @@
     <!-- Le contenu de la page sera ajoute ici -->
     <!-- HEADER -->
     <header>
-
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="Images/logo.png" alt="logos" width="79px" height="60px"></a>
+                <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px" height="100px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
                     aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item " ><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item "><a class="nav-link active" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <button class="btn btn-outline-success" type="submit">Rejoindre AfriTalent</button>
-                    <img src="" width="25%">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <a href="contact.html">Rejoindre AfriTalent</a>
+                    </button>
+
                 </div>
             </div>
 
@@ -44,11 +48,10 @@
     <!-- Contenu principal -->
     <main>
         <!-- HERO SECTION -->
-
         <section id="hero">
-            
-            <div >
-                <img src="images/pageacceuil.jpg" alt="" width="25%">
+            <!-- <img class="img" src="Images/pageacceuil.jpg" alt=""> -->
+            <div class="container py-5 ">
+
                 <h1>Trouvez le talent africain qu'il vous faut</h1>
                 <h2>
                     Connecter les meilleurs talents aux projets qui comptent,
@@ -58,195 +61,248 @@
                 </h2>
                 <button type="button" class="btn btn-secondary">Je suis Freelance</button>
                 <button type="button" class="btn btn-secondary"> Je cherche un Freelance</button>
-                <p>AfriTalent connecte les freelances africains aux clients du
-                    monde entier.</p>
-                <a href="freelances.html" class="btn btn-primary">Decouvrir les
-                    talents</a>
-
-                <div class="stat-item">
-                    <span class="counter" data-target="2500">+2500</span>
-                    <p>Freelances</p>
+                <p>AfriTalent connecte les freelances africains aux clients du monde entier.</p>
+                <a href="freelances.html" class="btn btn-primary">Decouvrir les talents</a>
+            </div>
+            <div class="row text-center mt-5 g-4">
+                <div class="col-md-4 ">
+                    <span class="counter h2 d-block fw-bold text-primary" data-target="2500">+2500</span>
+                    <p class=" text-primary">Freelances</p>
                 </div>
-                <div class="stat-item">
-                    <span class="counter" data-target="800">+800</span>
-                    <p>Entreprises</p>
+                <div class="col-md-4">
+                    <span class="counter  h2 d-block fw-bold text-primary" data-target="800">+800</span>
+                    <p class="text-primary">Entreprises</p>
                 </div>
-                <div class="stat-item">
-                    <span class="counter" data-target="12000">+12000</span>
-                    <p>Missions réalisées</p>
+                <div class="col-md-4">
+                    <span class="counter  h2 d-block fw-bold text-primary" data-target="12000">+12000</span>
+                    <p class="text-primary">Missions réalisées</p>
                 </div>
+            </div>
         </section>
         <!-- comment ca marche -->
-        <section id="comment ca marche" class="container py-5 ">
-             <div class="card-group flex-wrap gap-5 mb-4">
-                <div class="card">
-                    <img src="Images/profilexpert.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="icon">🚀</div>
-                        <h3 class="card-title">Créez votre profil d'expert</h3>
-                            <p class="card-desc">Mettez en avant vos compétences uniques et votre portfolio. Notre algorithme vous connecte aux meilleurs projets du continent.</p>
-                        <p class="card-text"><small class="text-muted">actualise il y'a 5 minutes</small></p>
-                        <a href="#" class="btn btn-primary">Decouvrir</a>
+        <section id="comment-ca-marche" class="container py-5 ">
+             <h2 class="text-center mb-5 fw-bold">Comment ça marche ?</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Étape 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Images/profilexpert.jpg" class="card-img-top" alt="Profil Expert">
+                        <div class="card-body">
+                            <div class="fs-1 mb-2">🚀</div>
+                            <h3 class="card-title h5 fw-bold">Créez votre profil d'expert</h3>
+                            <p class="card-text text-muted">Mettez en avant vos compétences uniques et votre portfolio. Notre algorithme vous connecte aux meilleurs projets du continent.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Images/mission.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="icon">🎯</div>
-                        <h3 class="card-title">Postulez aux missions</h3>
-                        <p class="card-desc">Accédez à des offres exclusives et échangez directement avec des entreprises visionnaires via notre interface sécurisée.</p>    
-                        <p class="card-text"><small class="text-muted">actualise il y'a 5 minutes</small></p>
-                        <a href="#" class="btn btn-primary">Decouvrir</a>
+                <!-- Étape 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Images/mission.jpg" class="card-img-top" alt="Missions">
+                        <div class="card-body">
+                            <div class="fs-1 mb-2">🎯</div>
+                            <h3 class="card-title h5 fw-bold">Postulez aux missions</h3>
+                            <p class="card-text text-muted">Accédez à des offres exclusives et échangez directement avec des entreprises visionnaires via notre interface sécurisée.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Images/collaboration.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="icon">🤝</div>
-                        <h3 class="card-title">Collaborez</h3>
-                             <p class="card-desc">Gérez vos contrats et vos livrables simplement avec nos outils intégrés.</p>
-                        <p class="card-text"><small class="text-muted">actualise il y'a 5 minutes</small></p>
-                        <a href="#" class="btn btn-primary">Decouvrir</a>
+                <!-- Étape 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="Images/collaboration.jpg" class="card-img-top" alt="Collaboration">
+                        <div class="card-body">
+                            <div class="fs-1 mb-2">🤝</div>
+                            <h3 class="card-title h5 fw-bold">Collaborez</h3>
+                            <p class="card-text text-muted">Gérez vos contrats et vos livrables simplement avec nos outils intégrés.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                        </div>
                     </div>
                 </div>
-            </div> 
-           
+            </div>
+
         </section>
         <section>
-            <div class="category-section">
-    <div class="category-grid">
-        
-        <!-- Développement Web -->
-        <div class="category-card">
-            <div class="icon-box">🌐</div>
-            <h3 class="category-title">Développement Web</h3>
-            <div class="freelance-badge"><span>1,240</span> freelances dispos</div>
-        </div>
-
-        <!-- Design UI/UX -->
-        <div class="category-card">
-            <div class="icon-box">🎨</div>
-            <h3 class="category-title">Design UI/UX</h3>
-            <div class="freelance-badge"><span>850</span> freelances dispos</div>
-        </div>
-
-        <!-- Marketing Digital -->
-        <div class="category-card">
-            <div class="icon-box">📊</div>
-            <h3 class="category-title">Marketing Digital</h3>
-            <div class="freelance-badge"><span>920</span> freelances dispos</div>
-        </div>
-
-        <!-- Data & IA -->
-        <div class="category-card">
-            <div class="icon-box">🧠</div>
-            <h3 class="category-title">Data & IA</h3>
-            <div class="freelance-badge"><span>430</span> freelances dispos</div>
-        </div>
-
-        <!-- Rédaction Tech -->
-        <div class="category-card">
-            <div class="icon-box">📝</div>
-            <h3 class="category-title">Rédaction Tech</h3>
-            <div class="freelance-badge"><span>560</span> freelances dispos</div>
-        </div>
-
-        <!-- DevOps & Cloud -->
-        <div class="category-card">
-            <div class="icon-box">☁️</div>
-            <h3 class="category-title">DevOps & Cloud</h3>
-            <div class="freelance-badge"><span>310</span> freelances dispos</div>
-        </div>
-
-    </div>
-</div>
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Explorez nos catégories</h2>
+                <div class="row g-4 justify-content-center">
+                    <!-- Développement Web -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">🌐</div>
+                            <h3 class="h6 fw-bold">Développement Web</h3>
+                            <span class="badge bg-soft-primary text-dark small">1,240 dispos</span>
+                        </div>
+                    </div>
+                    <!-- Design UI/UX -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">🎨</div>
+                            <h3 class="h6 fw-bold">Design UI/UX</h3>
+                            <span class="badge bg-soft-primary text-dark small">850 dispos</span>
+                        </div>
+                    </div>
+                    <!-- Marketing Digital -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">📊</div>
+                            <h3 class="h6 fw-bold">Marketing Digital</h3>
+                            <span class="badge bg-soft-primary text-dark small">920 dispos</span>
+                        </div>
+                    </div>
+                    <!-- Data & IA -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">🧠</div>
+                            <h3 class="h6 fw-bold">Data & IA</h3>
+                            <span class="badge bg-soft-primary text-dark small">430 dispos</span>
+                        </div>
+                    </div>
+                    <!-- Rédaction Tech -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">📝</div>
+                            <h3 class="h6 fw-bold">Rédaction Tech</h3>
+                            <span class="badge bg-soft-primary text-dark small">560 dispos</span>
+                        </div>
+                    </div>
+                    <!-- DevOps & Cloud -->
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="p-3 bg-white rounded shadow-sm h-100">
+                            <div class="fs-2 mb-2">☁️</div>
+                            <h3 class="h6 fw-bold">DevOps & Cloud</h3>
+                            <span class="badge bg-soft-primary text-dark small">310 dispos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Section Statistiques -->
-        <section id="statistiques" class="d-flex  justify-content-center gap-5">
+        <section id="statistiques" class="d-flex  justify-content-evenly gap-5">
             <div class="container py-5">
-                <h2>AfriTalent en chiffres</h2>
-                <div class="col text-center">
+                <h2 class="h2t text-center">AfriTalent en chiffres</h2>
+                <div class="row text-center">
                     <div class="col-md-4">
-                        <p>1 200+ Freelances</p>
+                        <p class="h3 fw-bold text-primary ">1 200+ Freelances</p>
                     </div>
                     <div class="col-md-4">
-                        <p>45 Pays representes</p>
+                        <p class="h3 fw-bold text-primary">45 Pays representes</p>
                     </div>
                     <div class="col-md-4">
-                        <p>3 800+ Projets realises</p>
+                        <p class="h3 fw-bold text-primary">3 800+ Projets realises</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section Temoignages -->
-        <section id="temoignages">
-            <div class="container py-5">
-                <h2>Ce que disent nos clients</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        <section id="temoignages" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Ce que disent nos clients</h2>
+
+                <div id="carouselTemoignages" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!-- Indicateurs (Points de navigation) -->
+                    <div class="carousel-indicators" style="bottom: -30px;">
+                        <button type="button" data-bs-target="#carouselTemoignages" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselTemoignages" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        <button type="button" data-bs-target="#carouselTemoignages" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+
+                    <!-- Contenu du carrousel -->
+                    <div class="carousel-inner text-center pb-4">
+                        <!-- Témoignage 1 -->
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <!-- Image du client -->
+                                    <img src="Images/slide.jpg" class="rounded-circle mb-3 shadow-sm"
+                                        alt="Portrait de Jean Dupont"
+                                        style="width: 90px; height: 90px; object-fit: cover;">
+                                    <p class="fs-5 lh-base">"Un service client absolument irréprochable et un produit de
+                                        très haute qualité. Je recommande vivement !"</p>
+                                    <h5 class="mt-3 mb-0">Jean Dupont</h5>
+                                    <small class="text-muted">Directeur Marketing</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+
+                        <!-- Témoignage 2 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <!-- Image du client -->
+                                    <img src="Images/slide2.jpg" class="rounded-circle mb-3 shadow-sm"
+                                        alt="Portrait de Marie Martin"
+                                        style="width: 90px; height: 90px; object-fit: cover;">
+                                    <p class="fs-5 lh-base">"L'équipe a su comprendre mes besoins immédiatement. Le
+                                        résultat dépasse toutes mes attentes."</p>
+                                    <h5 class="mt-3 mb-0">Marie Martin</h5>
+                                    <small class="text-muted">Entrepreneuse</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+
+                        <!-- Témoignage 3 -->
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <!-- Image du client -->
+                                    <img src="Images/slide3.jpg" class="rounded-circle mb-3 shadow-sm"
+                                        alt="Portrait de Lucas Bernard"
+                                        style="width: 90px; height: 90px; object-fit: cover;">
+                                    <p class="fs-5 lh-base">"Le rapport qualité-prix est excellent. Je retravaillerai
+                                        avec cette entreprise sans hésiter."</p>
+                                    <h5 class="mt-3 mb-0">Lucas Bernard</h5>
+                                    <small class="text-muted">Freelance</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+
+                    <!-- Boutons Suivant / Précédent -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTemoignages"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden">Précédent</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTemoignages"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="visually-hidden">Suivant</span>
                     </button>
                 </div>
-                <blockquote class="blockquote">
-                    <p>AfriTalent m'a permis de trouver un developpeur competent
-                        en moins de 48h.</p>
-                    <footer class="blockquote-footer">Aminata Diallo, Directrice
-                        Marketing</footer>
-                </blockquote>
             </div>
         </section>
+
         <!-- SECTION APPEL À L'ACTION -->
-        <section id="action" class="d-flex  justify-content-center gap-5">
-            <!-- <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary
-                link</a>
-            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button"
-                aria-disabled="true">Premey Link</a> -->
-                <div class="cta-section">
-        <div class="cta-banner">
-        <div class="cta-content">
-            <h2 class="cta-title">Prêt à propulser vos projets avec les meilleurs talents ?</h2>
-            <p class="cta-subtitle">Que vous soyez une entreprise à la recherche de l'excellence ou un freelance prêt à relever de nouveaux défis, votre aventure commence ici.</p>
-            <a href="#" class="cta-button">Rejoindre l'écosystème</a>
-        </div>
-    </div>
-
-
+        <section id="action" class="py-5 text-center bg-white text-dark">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Prêt à propulser vos projets avec les meilleurs talents ?</h2>
+                <p class="lead text-dark opacity-75 mb-4 mx-auto" style="max-width: 700px;">
+                    Que vous soyez une entreprise à la recherche de l'excellence ou un freelance prêt à relever de nouveaux défis, votre aventure commence ici.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg px-4 shadow">Rejoindre l'écosystème</a>
+            </div>
         </section>
 
     </main>
 
     <!-- Pied de page -->
     <footer>
-        <div class="container py-4">
-            <p>&copy; 2026 AfriTalent. Tous droits reserves.</p>
+        <hr class="mt-5 mb-4 border-secondary">
+
+        <div class="text-center small text-secondary">
+            &copy; 2026 AfriTalent. Tous droits réservés.
         </div>
     </footer>
     <!-- Bootstrap 5 via CDN : script JavaScript -->
