@@ -21,21 +21,23 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px" height="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px"
+                        height="100px"></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation ">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item "><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item "><a class="nav-link " href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <button class="btn btn-outline-primary" type="submit">
+                    <button class="btn15 ">
                         <a href="contact.html">Rejoindre AfriTalent</a>
                     </button>
 
@@ -49,7 +51,7 @@
     <main>
         <!-- HERO SECTION -->
         <section id="hero">
-            <!-- <img class="img" src="Images/pageacceuil.jpg" alt=""> -->
+
             <div class="container py-5 ">
 
                 <h1>Trouvez le talent africain qu'il vous faut</h1>
@@ -59,12 +61,22 @@
                     les plus audacieux.
                     Rejoignez une communauté qui valorise le savoir-faire africain et bénéficiez d'un service rapide.
                 </h2>
-                <button type="button" class="btn btn-secondary">Je suis Freelance</button>
-                <button type="button" class="btn btn-secondary"> Je cherche un Freelance</button>
-                <p>AfriTalent connecte les freelances africains aux clients du monde entier.</p>
-                <a href="freelances.html" class="btn btn-primary">Decouvrir les talents</a>
+               
+                <a href="freelances.html" class="btn btn-primary" id="btn10">Decouvrir les talents</a>
+                <h3 class="mt-4 g-3">AfriTalent connecte les freelances africains aux clients du monde entier.</h3>
+
+
+                <div class="-row-ls-lg-6 d-flex gap-3 mt-5 g-4">
+                    <button type="button" class="btn btn-secondary" id="btn10">Je suis Freelance</button>
+                    <button type="button" class="btn btn-secondary" id="btn10"> Je cherche un Freelance</button>
+                </div>
+
             </div>
-            <div class="row text-center mt-5 g-4">
+
+
+
+
+            <div class="row text-center mt-5 g-4" >
                 <div class="col-md-4 ">
                     <span class="counter h2 d-block fw-bold text-primary" data-target="2500">+2500</span>
                     <p class=" text-primary">Freelances</p>
@@ -81,19 +93,20 @@
         </section>
         <!-- comment ca marche -->
         <section id="comment-ca-marche" class="container py-5 ">
-             <h2 class="text-center mb-5 fw-bold">Comment ça marche ?</h2>
+            <h2 class="text-center mb-5 fw-bold">Comment ça marche ?</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Étape 1 -->
-                <div class="col">
+                <div class="col" >
                     <div class="card h-100 shadow-sm">
                         <img src="Images/profilexpert.jpg" class="card-img-top" alt="Profil Expert">
                         <div class="card-body">
                             <div class="fs-1 mb-2">🚀</div>
                             <h3 class="card-title h5 fw-bold">Créez votre profil d'expert</h3>
-                            <p class="card-text text-muted">Mettez en avant vos compétences uniques et votre portfolio. Notre algorithme vous connecte aux meilleurs projets du continent.</p>
+                            <p class="card-text text-muted">Mettez en avant vos compétences uniques et votre portfolio.
+                                Notre algorithme vous connecte aux meilleurs projets du continent.</p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-3">
-                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                            <a href="#" class="btn1 btn-outline-primary w-100">Découvrir</a>
                         </div>
                     </div>
                 </div>
@@ -104,10 +117,11 @@
                         <div class="card-body">
                             <div class="fs-1 mb-2">🎯</div>
                             <h3 class="card-title h5 fw-bold">Postulez aux missions</h3>
-                            <p class="card-text text-muted">Accédez à des offres exclusives et échangez directement avec des entreprises visionnaires via notre interface sécurisée.</p>
+                            <p class="card-text text-muted">Accédez à des offres exclusives et échangez directement avec
+                                des entreprises visionnaires via notre interface sécurisée.</p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-3">
-                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                            <a href="#" class="btn1 btn-outline-primary w-100">Découvrir</a>
                         </div>
                     </div>
                 </div>
@@ -118,10 +132,11 @@
                         <div class="card-body">
                             <div class="fs-1 mb-2">🤝</div>
                             <h3 class="card-title h5 fw-bold">Collaborez</h3>
-                            <p class="card-text text-muted">Gérez vos contrats et vos livrables simplement avec nos outils intégrés.</p>
+                            <p class="card-text text-muted">Gérez vos contrats et vos livrables simplement avec nos
+                                outils intégrés.</p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-3">
-                            <a href="#" class="btn btn-outline-primary w-100">Découvrir</a>
+                            <a href="#" class="btn1 btn-outline-primary w-100">Découvrir</a>
                         </div>
                     </div>
                 </div>
@@ -131,9 +146,9 @@
         <section>
             <div class="container">
                 <h2 class="text-center mb-5 fw-bold">Explorez nos catégories</h2>
-                <div class="row g-4 justify-content-center">
+                <div class="row g-4 justify-content-center" id="service">
                     <!-- Développement Web -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">🌐</div>
                             <h3 class="h6 fw-bold">Développement Web</h3>
@@ -141,7 +156,7 @@
                         </div>
                     </div>
                     <!-- Design UI/UX -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">🎨</div>
                             <h3 class="h6 fw-bold">Design UI/UX</h3>
@@ -149,7 +164,7 @@
                         </div>
                     </div>
                     <!-- Marketing Digital -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">📊</div>
                             <h3 class="h6 fw-bold">Marketing Digital</h3>
@@ -157,7 +172,7 @@
                         </div>
                     </div>
                     <!-- Data & IA -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">🧠</div>
                             <h3 class="h6 fw-bold">Data & IA</h3>
@@ -165,7 +180,7 @@
                         </div>
                     </div>
                     <!-- Rédaction Tech -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">📝</div>
                             <h3 class="h6 fw-bold">Rédaction Tech</h3>
@@ -173,7 +188,7 @@
                         </div>
                     </div>
                     <!-- DevOps & Cloud -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center" id="service2">
                         <div class="p-3 bg-white rounded shadow-sm h-100">
                             <div class="fs-2 mb-2">☁️</div>
                             <h3 class="h6 fw-bold">DevOps & Cloud</h3>
@@ -289,9 +304,10 @@
             <div class="container">
                 <h2 class="fw-bold mb-3">Prêt à propulser vos projets avec les meilleurs talents ?</h2>
                 <p class="lead text-dark opacity-75 mb-4 mx-auto" style="max-width: 700px;">
-                    Que vous soyez une entreprise à la recherche de l'excellence ou un freelance prêt à relever de nouveaux défis, votre aventure commence ici.
+                    Que vous soyez une entreprise à la recherche de l'excellence ou un freelance prêt à relever de
+                    nouveaux défis, votre aventure commence ici.
                 </p>
-                <a href="#" class="btn btn-primary btn-lg px-4 shadow">Rejoindre l'écosystème</a>
+                <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Rejoindre l'écosystème</a>
             </div>
         </section>
 

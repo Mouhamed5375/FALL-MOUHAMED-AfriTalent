@@ -1,41 +1,41 @@
 :root {
     /* les couleurs */
-    --bg-primary:white;
+    --bg-primary: white;
     --bg-card: #161B22;
-    --accent-color: #ffffff;
+    --accent-color: #0c0707;
     --secondary-color: #2EC4B6;
     --text-main: #2358dd;
-    --text-muted: #e0761a; 
+    --text-muted: #e0761a;
 
     /* espacements */
-    --space-xs: 0.25rem;       
-    --space-sm: 0.5rem;        
-    --space-md: 1rem;          
-    --space-lg: 1.5rem;        
-    --space-xl: 2rem;          
-    --space-xxl: 4rem;         
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 4rem;
 
     /* les polices */
     --font-title: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
-    /* autre */
-    --border-radius-sm: 8px;   
-    --border-radius-lg: 16px; 
 
-    --transition-fast: 0.2s ease;                       
-    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+    /* autre */
+    --border-radius-sm: 8px;
+    --border-radius-lg: 16px;
+
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* le reset */
-*  {
+* {
     margin: 0;
     padding: 0;
 }
 
 /* --- 1. STYLES GÉNÉRAUX --- */
 body {
-    background-color: var(--bg-primary); 
+    background-color: var(--bg-primary);
     color: var(--text-main);
     font-family: var(--font-body);
     text-align: justify;
@@ -44,10 +44,11 @@ body {
     font-size: medium;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-title);
-    font-weight: 700;
+    font-weight: 900;
     color: var(--text-main);
+    
 }
 
 p {
@@ -61,36 +62,206 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color); /
+    color: var(--secondary-color);/
 }
 
 /* --- 2. NAVIGATION (NAVBAR) --- */
 .navbar {
-    background-color: rgb(0, 0, 0) ;
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(243, 243, 244, 0.979);
     padding: var(--space-md) 0;
     transition: var(--transition-smooth);
     font-size: 20px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .navbar-brand {
     font-family: var(--font-title);
     font-weight: 800;
-    color: var(--text-main) ;
+    color: var(--text-main);
 }
 
 .nav-link {
-    color: white ;
+    color: white;
     font-weight: 500;
-    padding: var(--space-sm) var(--space-md) ;
+    padding: var(--space-sm) var(--space-md);
     transition: var(--transition-fast);
+    
 }
 
 .nav-link:hover {
-    color: var(--accent-color) ;
+    background: linear-gradient(129deg,rgb(229, 218, 68),white);
+    color: var(--accent-color);
+    border-radius: 30px;
+    
+}
+.btn15{
+    background-color: #2358dd;
+    border-radius: 150px;
+    color: white;
+    padding: 14px;
+    margin: 14px;
+}
+li{
+    font-size: 28px;
 }
 
 
+/* --- 3. SECTION HERO --- */
+#hero {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+
+}
+.btn1{
+    background-color: #326cea;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--border-radius-lg);
+
+    margin: 15px;
+    padding: 14px;
+    border-radius: 19px;
+    transition: var(--transition-smooth);
+  
+}
+.btn1:hover{
+   background-color: #e77014;
+   letter-spacing: 0.50em;
+   transform: rotate(10%);
+   
+
+}
+
+.carousel-inner {
+    background-image: cover;
+}
+
+.card1 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 0px rgba(80, 103, 220, 0.745);
+}
+
+.card-title {
+    text-decoration: rgb(255, 255, 255);
+}
+
+.card-desc {
+    text-decoration: white;
+}
+#service{
+   box-shadow: 0 0 5px 8px #e77014;
+
+}
+
+#service2:hover{
+    box-shadow: 0 0 2px 3px #2f65ef;
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+#btn10{
+    background-color: #2f65ef;
+}
+#btn10:hover{
+    background-color: #e77014;
+   letter-spacing: 0.30em;
+}
+
+/* --- 4. CONFIGURATION DU BENTO GRID --- */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-xl) 0;
+}
+
+/* Les Cartes du Bento Grid */
+.bento-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgb(30, 28, 28);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    transition: transform var(--transition-smooth), border-color var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(92, 162, 235, 0.4);
+    /* Lueur subtile avec --accent-color */
+}
+
+/* --- 5. BOUTONS & COMPOSANTS UI --- */
+.btn-custom-primary {
+    background-color: var(--accent-color);
+    color: var(--bg-primary) !important;
+    font-family: var(--font-title);
+    font-weight: 600;
+    padding: var(--space-sm) var(--space-xl);
+    border-radius: var(--border-radius-sm);
+    border: none;
+    transition: var(--transition-fast);
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.02);
+}
+
+.btn-custom-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: var(--font-title);
+    font-weight: 600;
+    padding: var(--space-sm) var(--space-xl);
+    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--bg-card);
+    transition: var(--transition-fast);
+}
+
+.btn-custom-secondary:hover {
+    border-color: var(--accent-color);
+    background-color: rgba(92, 162, 235, 0.05);
+}
+
+/* Badges / Tags (ex: "Data & IA", "DevOps") */
+.badge-tech {
+    background-color: rgba(92, 162, 235, 0.1);
+    color: var(--accent-color);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: var(--space-sm);
+}
+
+/* --- 6. FOOTER --- */
+footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid rgba(248, 249, 250, 0.05);
+    padding: var(--space-xl) 0;
+    margin-top: var(--space-xxl);
+}
+
+footer h5 {
+    margin-bottom: var(--space-md);
+}
+
+footer ul li {
+    margin-bottom: var(--space-sm);
+}
