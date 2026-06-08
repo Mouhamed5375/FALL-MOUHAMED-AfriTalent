@@ -31,6 +31,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* --- 1. STYLES GÉNÉRAUX --- */
@@ -67,7 +68,7 @@ a:hover {
 
 /* --- 2. NAVIGATION (NAVBAR) --- */
 .navbar {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(13, 14, 14);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(243, 243, 244, 0.979);
@@ -75,7 +76,10 @@ a:hover {
     transition: var(--transition-smooth);
     font-size: 20px;
     color: #fff !important;
+    top: 0;
+    z-index: 1;
 }
+
 
 .navbar-brand {
     font-family: var(--font-title);
@@ -90,32 +94,37 @@ a:hover {
     transition: var(--transition-fast);
     
 }
+#navMenu{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 
 .nav-link:hover {
     background: linear-gradient(129deg,rgb(229, 218, 68),white);
     color: var(--accent-color);
     border-radius: 30px;
     
+    
 }
 .btn15{
     background-color: #2358dd;
     border-radius: 150px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 14px;
     margin: 14px;
 }
 li{
     font-size: 28px;
+    
 }
 
 
 /* --- 3. SECTION HERO --- */
 #hero {
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 
 }
 
@@ -129,7 +138,6 @@ li{
     color: #fff;
     text-transform: uppercase;
     font-size: var(--border-radius-lg);
-
     margin: 15px;
     padding: 14px;
     border-radius: 19px;
@@ -150,7 +158,7 @@ li{
 
 .card1 {
     background-color: rgb(255, 255, 255);
-    box-shadow: 4px 4px 0px rgba(80, 103, 220, 0.745);
+    box-shadow: 2px 2px 0px rgba(40, 42, 53, 0.745);
 }
 
 .card-title {
@@ -161,14 +169,14 @@ li{
     text-decoration: white;
 }
 #service{
-   box-shadow: 0 0 5px 8px #e77014;
+   box-shadow: 0 0 5px 8px #eccbb1;
 
 }
 
 #service2:hover{
     box-shadow: 0 0 2px 3px #2f65ef;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     
 }
 #btn10{
@@ -177,6 +185,11 @@ li{
 #btn10:hover{
     background-color: #e77014;
    letter-spacing: 0.30em;
+}
+#crt1:hover {
+    box-shadow: 0 0 2px 3px #2f65ef;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* --- 4. CONFIGURATION DU BENTO GRID --- */
@@ -264,4 +277,28 @@ footer h5 {
 
 footer ul li {
     margin-bottom: var(--space-sm);
+}
+
+/* les @medias query  */
+/* 1. Style par 375px (pour les smartphones) */
+@media screen and (min-width: 375px) {
+body {
+  background-color: lightblue;
+  font-size: 10px; 
+  }
+}
+
+/* 2. Style pour les tablettes plus de 768px  */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* 3. Style pour les grands écrans (plus de 1200px de large) */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(247, 245, 244);
+    font-size: 18px;
+  }
 }
