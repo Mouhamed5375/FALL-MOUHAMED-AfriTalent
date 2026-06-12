@@ -27,7 +27,7 @@
     --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* le reset */
+/* le reset */  
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +43,37 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     font-size: medium;
+    padding-top: 70px;
+}
+body.dark{
+    --bg-primary: rgb(29, 21, 21);
+    --bg-card: #161B22;
+    --accent-color: #0c0707;
+    --secondary-color: #2EC4B6;
+    --text-main: #2358dd;
+    --text-muted: #e0761a;
+
+
+}
+nav.dark{
+    background-color: var(--text-main);
+    color: #600606;
+}
+
+/* Bouton Retour en haut */
+.back-to-top {
+    background:linear-gradient(12deg,rgba(46, 46, 45, 0.707),white);;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    transition: 0.3s;
+    font-size: 40px;
+    border-radius: 50px;
+
+}
+.show-btn {
+    opacity: 1;
+    visibility: visible;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -68,30 +99,43 @@ a:hover {
 
 /* --- 2. NAVIGATION (NAVBAR) --- */
 .navbar {
-    background-color: rgb(13, 14, 14);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(243, 243, 244, 0.979);
+    /* background-color: rgb(10, 10, 10); */
+    backdrop-filter: none;
     padding: var(--space-md) 0;
     transition: var(--transition-smooth);
     font-size: 20px;
-    color: #fff !important;
+    color: #f67709 !important;
     top: 0;
-    z-index: 1;
+    left: 0;
+    position: fixed;
+    padding-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+    z-index: 1050;
 }
 
+/* --- STYLE ACTIVÉ AU SCROLL --- */
+.navbar.navbar-scrolled {
+    background-color: #000000; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    padding-top: 8px; /* Effet shrink (hauteur réduite) */
+    padding-bottom: 8px;
+    
+}
 
-.navbar-brand {
-    font-family: var(--font-title);
-    font-weight: 800;
-    color: var(--text-main);
+/* Réduction de la taille du logo au scroll */
+.navbar.navbar-scrolled .navbar-brand img {
+    height: 100px; /* Réduit l'image de 100px à 70px */
 }
 
 .nav-link {
-    color: white;
+    color: rgb(212, 118, 10);
     font-weight: 500;
     padding: var(--space-sm) var(--space-md);
     transition: var(--transition-fast);
+    opacity: 1;
     
 }
 #navMenu{
@@ -101,20 +145,49 @@ a:hover {
 }
 
 .nav-link:hover {
-    background: linear-gradient(129deg,rgb(229, 218, 68),white);
+    background: linear-gradient(129deg,rgb(245, 142, 7),white);
     color: var(--accent-color);
     border-radius: 30px;
     
     
 }
 .btn15{
-    background-color: #2358dd;
+    background-color: #dd9923;
+    font-family: sans-serif;
+    text-decoration: none;
     border-radius: 150px;
     color: rgb(255, 255, 255);
     padding: 14px;
     margin: 14px;
 }
+.darklight{
+    cursor: pointer;
+        
+}
+.dark-light i{
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    align-items: center; 
+   
+}
+.dark-light i.moon{
+    opacity: 0;
+    pointer-events: none;
+    color: #ffffff;
+
+}
+.dark-light.active i.sun{
+    opacity: 0;
+    pointer-events: auto;
+}
+.dark-light.active i.moon{
+    opacity: 1;
+    pointer-events: none; 
+}
+
 li{
+    color: var(--text-main);
     font-size: 28px;
     
 }
@@ -133,6 +206,7 @@ li{
     margin-bottom: var(--space-md);
 
 }
+
 .btn1{
     background-color: #326cea;
     color: #fff;
@@ -211,11 +285,11 @@ li{
     flex-direction: column;
     justify-content: space-between;
 }
-
+  
 .bento-card:hover {
     transform: translateY(-5px);
     border-color: rgba(92, 162, 235, 0.4);
-    /* Lueur subtile avec --accent-color */
+    
 }
 
 /* --- 5. BOUTONS & COMPOSANTS UI --- */

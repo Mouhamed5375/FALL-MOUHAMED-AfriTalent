@@ -13,6 +13,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <div class="container">
+            <div class="container" >
                 <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px"
                         height="100px"></a>
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
@@ -40,7 +41,13 @@
                     <button class="btn15 ">
                         <a href="contact.html">Rejoindre AfriTalent</a>
                     </button>
-
+                    
+                </div>
+                <div class="darklight">
+                    <div class="dark-light">
+                        <i class="fa-solid fa-moon moon"></i>
+                        <i class="fa-regular fa-sun sun"></i>
+                    </div>
                 </div>
             </div>
 
@@ -50,12 +57,14 @@
     <!-- Contenu principal -->
     <main>
         <!-- HERO SECTION -->
+       
         <section id="hero">
 
             <div class="container py-5 ">
 
                 <h1>Trouvez le talent africain qu'il vous faut</h1>
                 <h2>
+                    
                     Connecter les meilleurs talents aux projets qui comptent,
                     Afrique Talents sélectionne pour vous des experts passionnés, prêts à s'investir dans vos projets
                     les plus audacieux.
@@ -64,17 +73,18 @@
                
                 <a href="freelances.html" class="btn btn-primary" id="btn10">Decouvrir les talents</a>
                 <h3 class="mt-4 g-3">AfriTalent connecte les freelances africains aux clients du monde entier.</h3>
+                 <div class="col-lg-6">
+                
 
+            </div>
 
                 <div class="-row-ls-lg-6 d-flex gap-3 mt-5 g-4">
-                    <!-- <button type="button" class="btn btn-secondary" id="btn10"><a href="freelances.html">Je suis Freelance</a></button>
-                    <button type="button" class="btn btn-secondary" id="btn10"> Je cherche un Freelance</button> -->
                     <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je suis Freelance</a>
                     <a href="freelances.html" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je cherche un Freelance</a>
                 </div>
 
             </div>
-
+            
 
 
 
@@ -92,11 +102,12 @@
                     <p class="text-primary">Missions réalisées</p>
                 </div>
             </div>
+           
         </section>
         <!-- comment ca marche -->
         <section id="comment-ca-marche" class="container py-5 ">
             <h2 class="text-center mb-5 fw-bold">Comment ça marche ?</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="magic">
                 <!-- Étape 1 -->
                 <div class="col" >
                     <div class="card h-100 shadow-sm">
@@ -313,6 +324,9 @@
                     <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Rejoindre l'écosystème</a>
                 </div>
             </div>
+             <div>
+            <button id="back-to-top" class="back-to-top">↑</button>
+        </div>
         </section>
 
     </main>
@@ -320,7 +334,7 @@
     <!-- Pied de page -->
     <footer>
         <hr class="mt-5 mb-4 border-secondary">
-
+        
         <div class="text-center small text-secondary">
             &copy; 2026 AfriTalent. Tous droits réservés.
         </div>
