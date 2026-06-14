@@ -390,3 +390,30 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Styles pour les boutons de filtrage */
+.filter-btn {
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+        
+/* Masquage fluide des cartes */
+.filter-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+        
+.filter-item.is-hidden {
+    display: none !important;
+}
+
+
+/* Masquer les messages d'erreur par défaut */
+.error-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #dc3545; /* Rouge Bootstrap */
+}
