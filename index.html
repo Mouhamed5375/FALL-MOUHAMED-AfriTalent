@@ -13,7 +13,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -21,9 +24,9 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <div class="container" >
-                <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="150px"
-                        height="100px"></a>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="Images/Logo15.png" alt="logos" width="100"
+                        height="70"></a>
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
                     aria-label="Toggle navigation ">
@@ -41,14 +44,15 @@
                     <button class="btn15 ">
                         <a href="contact.html">Rejoindre AfriTalent</a>
                     </button>
-                    
-                </div>
-                <div class="darklight">
-                    <div class="dark-light">
-                        <i class="fa-solid fa-moon moon"></i>
-                        <i class="fa-regular fa-sun sun"></i>
+                      <!-- Le toggle Dark/Light  -->
+                    <div class="darklight">
+                        <div class="dark-light">
+                            <i class="fa-solid fa-moon moon"></i>
+                            <i class="fa-regular fa-sun sun"></i>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </nav>
@@ -57,60 +61,76 @@
     <!-- Contenu principal -->
     <main>
         <!-- HERO SECTION -->
-       
         <section id="hero" class="js-fade-in">
+            <div class="container py-5">
+                <div class="row align-items-center">
 
-            <div class="container py-5 ">
+                    <!-- COLONNE GAUCHE : Les textes et boutons -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h1>
+                            <span class="art1">Trouvez</span> <br><span class="art2">le talent africain</span> <br><span
+                                class="art3">qu'il vous faut</span>
+                        </h1>
+                        <h2 class="fs-5 fw-normal text-muted my-3">
+                            <span class="art4"> Connecter les meilleurs talents aux projets qui comptent,
+                                Afrique Talents sélectionne pour vous des experts passionnés, prêts à s'investir dans
+                                vos
+                                projets
+                                les plus audacieux.
+                                Rejoignez une communauté qui valorise le savoir-faire africain et bénéficiez d'un
+                                service
+                                rapide.
+                            </span>
+                        </h2>
 
-                <h1>Trouvez le talent africain qu'il vous faut</h1>
-                <h2>
-                    
-                    Connecter les meilleurs talents aux projets qui comptent,
-                    Afrique Talents sélectionne pour vous des experts passionnés, prêts à s'investir dans vos projets
-                    les plus audacieux.
-                    Rejoignez une communauté qui valorise le savoir-faire africain et bénéficiez d'un service rapide.
-                </h2>
-               
-                <a href="freelances.html" class="btn btn-primary" id="btn10">Decouvrir les talents</a>
-                <h3 class="mt-4 g-3">AfriTalent connecte les freelances africains aux clients du monde entier.</h3>
-                 <div class="col-lg-6">
-                
+                        <a href="freelances.html" class="btn btn-primary my-2" id="btn10">Découvrir les talents</a>
 
-            </div>
+                        <h3 class="mt-4 h5">AfriTalent connecte les freelances africains aux clients du monde entier.
+                        </h3>
 
-                <div class="-row-ls-lg-6 d-flex gap-3 mt-5 g-4 px-3">
-                    <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je suis Freelance</a>
-                    <a href="freelances.html" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je cherche un Freelance</a>
+                        <!-- Boutons d'action -->
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je suis Freelance</a>
+                            <a href="freelances.html" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Je cherche
+                                un Freelance</a>
+                        </div>
+                    </div>
+
+                    <!-- COLONNE DROITE : L'image -->
+                    <div class="col-lg-6 text-center">
+                        <!-- Remplacez "Images/hero-image.jpg" par le chemin de votre vraie image -->
+                        <img src="Images/accccccccc1.jpg" alt="Talents AfriTalent" class="img-fluid rounded shadow-lg"
+                            style="max-height: 390px; object-fit: cover;">
+                    </div>
+
                 </div>
-
             </div>
-            
 
-
-
-            <div class="row text-center mt-5 g-4" >
-                <div class="col-md-4 ">
+            <!-- Compteurs / Statistiques du Hero -->
+            <div class="row text-center mt-5 g-4 mx-0">
+                <div class="col-md-4">
                     <span class="js-counter h2 d-block fw-bold text-primary" data-target="2500">+2500</span>
-                    <p class=" text-primary">Freelances</p>
+                    <p class="text-primary">Freelances</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="js-counter  h2 d-block fw-bold text-primary" data-target="800">+800</span>
+                    <span class="js-counter h2 d-block fw-bold text-primary" data-target="800">+800</span>
                     <p class="text-primary">Entreprises</p>
                 </div>
                 <div class="col-md-4">
-                    <span class="js-counter  h2 d-block fw-bold text-primary" data-target="12000">+12000</span>
+                    <span class="js-counter h2 d-block fw-bold text-primary" data-target="12000">+12000</span>
                     <p class="text-primary">Missions réalisées</p>
                 </div>
             </div>
-           
+
+
         </section>
         <!-- comment ca marche -->
         <section id="comment-ca-marche" class="container py-5 js-fade-in">
             <h2 class="text-center mb-5 fw-bold py-5">Comment ça marche ?</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4" id="magic">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Étape 1 -->
-                <div class="col" >
-                    <div class="card h-100 shadow-sm">
+                <div class="col">
+                    <div class="card h-100 shadow-sm" id="magic">
                         <img src="Images/profilexpert.jpg" class="card-img-top" alt="Profil Expert">
                         <div class="card-body">
                             <div class="fs-1 mb-2">🚀</div>
@@ -125,7 +145,7 @@
                 </div>
                 <!-- Étape 2 -->
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" id="magic">
                         <img src="Images/mission.jpg" class="card-img-top" alt="Missions">
                         <div class="card-body">
                             <div class="fs-1 mb-2">🎯</div>
@@ -140,7 +160,7 @@
                 </div>
                 <!-- Étape 3 -->
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" id="magic">
                         <img src="Images/collaboration.jpg" class="card-img-top" alt="Collaboration">
                         <div class="card-body">
                             <div class="fs-1 mb-2">🤝</div>
@@ -156,55 +176,55 @@
             </div>
 
         </section>
-        <section>
-            <div class="container py-5">
+        <section id="categories" class="bg-light-subtle py-5">
+            <div class="container ">
                 <h2 class="text-center mb-5 fw-bold py-5">Explorez nos catégories</h2>
-                <div class="row g-4 justify-content-center" id="service">
+                <div class="row g-4 justify-content-center">
                     <!-- Développement Web -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center" >
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2">
-                            <div class="fs-2 mb-2">🌐</div>
-                            <h3 class="h6 fw-bold">Développement Web</h3>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100">
+                            <div class="category-icon fs-2 mb-2">🌐</div>
+                            <h3 class="h6 fw-bold category-title">Développement Web</h3>
                             <span class="badge bg-soft-primary text-dark small">1,240 dispos</span>
                         </div>
                     </div>
                     <!-- Design UI/UX -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center" >
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2" id="service2">
-                            <div class="fs-2 mb-2">🎨</div>
-                            <h3 class="h6 fw-bold">Design UI/UX</h3>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100" id="service2">
+                            <div class="category-icon fs-2 mb-2">🎨</div>
+                            <h3 class="h6 fw-bold category-title">Design UI/UX</h3>
                             <span class="badge bg-soft-primary text-dark small">850 dispos</span>
                         </div>
                     </div>
                     <!-- Marketing Digital -->
-                    <div class="col-6 col-md-4 col-lg-2 text-center" >
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2">
-                            <div class="fs-2 mb-2">📊</div>
-                            <h3 class="h6 fw-bold">Marketing Digital</h3>
+                    <div class="col-6 col-md-4 col-lg-2 text-center">
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100" id="service2">
+                            <div class="category-icon fs-2 mb-2">📊</div>
+                            <h3 class="h6 fw-bold category-title">Marketing Digital</h3>
                             <span class="badge bg-soft-primary text-dark small">920 dispos</span>
                         </div>
                     </div>
                     <!-- Data & IA -->
                     <div class="col-6 col-md-4 col-lg-2 text-center">
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2">
-                            <div class="fs-2 mb-2">🧠</div>
-                            <h3 class="h6 fw-bold">Data & IA</h3>
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100" id="service2">
+                            <div class="category-icon fs-2 mb-2">🧠</div>
+                            <h3 class="h6 fw-bold category-title">Data & IA</h3>
                             <span class="badge bg-soft-primary text-dark small">430 dispos</span>
                         </div>
                     </div>
                     <!-- Rédaction Tech -->
                     <div class="col-6 col-md-4 col-lg-2 text-center">
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2">
-                            <div class="fs-2 mb-2">📝</div>
-                            <h3 class="h6 fw-bold">Rédaction Tech</h3>
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100" id="service2">
+                            <div class="category-icon fs-2 mb-2">📝</div>
+                            <h3 class="h6 fw-bold category-title">Rédaction Tech</h3>
                             <span class="badge bg-soft-primary text-dark small">560 dispos</span>
                         </div>
                     </div>
                     <!-- DevOps & Cloud -->
                     <div class="col-6 col-md-4 col-lg-2 text-center">
-                        <div class="p-3 bg-white rounded shadow-sm h-100" id="service2">
-                            <div class="fs-2 mb-2">☁️</div>
-                            <h3 class="h6 fw-bold">DevOps & Cloud</h3>
+                        <div class="category-card p-3 bg-white rounded shadow-sm h-100" id="service2">
+                            <div class="category-icon fs-2 mb-2">☁️</div>
+                            <h3 class="h6 fw-bold category-title">DevOps & Cloud</h3>
                             <span class="badge bg-soft-primary text-dark small">310 dispos</span>
                         </div>
                     </div>
@@ -261,7 +281,7 @@
                                         style="width: 90px; height: 90px; object-fit: cover;">
                                     <p class="fs-5 lh-base">"Un service client absolument irréprochable et un produit de
                                         très haute qualité. Je recommande vivement !"</p>
-                                    <h5 class="mt-3 mb-0">Jean Dupont</h5>
+                                    <h2 class="mt-3 mb-0">Jean Dupont</h2>
                                     <small class="text-muted">Directeur Marketing</small>
                                 </div>
                             </div>
@@ -277,7 +297,7 @@
                                         style="width: 90px; height: 90px; object-fit: cover;">
                                     <p class="fs-5 lh-base">"L'équipe a su comprendre mes besoins immédiatement. Le
                                         résultat dépasse toutes mes attentes."</p>
-                                    <h5 class="mt-3 mb-0">Marie Martin</h5>
+                                    <h2 class="mt-3 mb-0">Marie Martin</h2>
                                     <small class="text-muted">Entrepreneuse</small>
                                 </div>
                             </div>
@@ -293,7 +313,7 @@
                                         style="width: 90px; height: 90px; object-fit: cover;">
                                     <p class="fs-5 lh-base">"Le rapport qualité-prix est excellent. Je retravaillerai
                                         avec cette entreprise sans hésiter."</p>
-                                    <h5 class="mt-3 mb-0">Lucas Bernard</h5>
+                                    <h2 class="mt-3 mb-0">Lucas Bernard</h2>
                                     <small class="text-muted">Freelance</small>
                                 </div>
                             </div>
@@ -320,27 +340,88 @@
             <div id="action" class="py-5 text-center  text-dark">
                 <div class="container">
                     <h2 class="fw-bold mb-3">Prêt à propulser vos projets avec les meilleurs talents ?</h2>
-                    <p class="lead text-dark opacity-75 mb-4 mx-auto" style="max-width: 800px;">
+                    <p class="lead text-s opacity-75 mb-4 mx-auto" style="max-width: 800px;">
                         Que vous soyez une entreprise à la recherche de l'excellence ou un freelance prêt à relever de
                         nouveaux défis, votre aventure commence ici.
                     </p>
                     <a href="#" class="btn btn-primary btn-lg px-4 shadow" id="btn10">Rejoindre l'écosystème</a>
                 </div>
             </div>
-             <div>
-            <button id="back-to-top" class="back-to-top">↑</button>
-        </div>
+            
         </section>
 
     </main>
-
+    <!-- Le bouton « Retour en haut »  -->
+    <button id="back-to-top" class="back-to-top">↑</button>
     <!-- Pied de page -->
     <footer>
-        <hr class="mt-5 mb-4 border-secondary">
-        
-        <div class="text-center small text-secondary">
-            &copy; 2026 AfriTalent. Tous droits réservés.
-        </div>
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Colonne 1: Description -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-dark mb-3">
+                        <i class="bi bi-lightbulb-fill me-2 text-secondary"></i><span class="ott">AfriTalent</span>
+                    </h5>
+                    <p class="small">
+                        Connecter les talents africains avec les opportunités mondiales. Nous bâtissons l'avenir
+                        du
+                        recrutement sur le continent.
+                    </p>
+                    <div class="d-flex gap-3 mt-3" id="reseaux">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Colonne 2: Liens utiles -->
+                <div class="col-lg-3 col-md-6 ">
+                    <h5 class="text-white mb-3">Liens utiles</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li class="mb-2"><a href="index.html" class="text-primary text-decoration-none">Accueil</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html" class="text-primary text-decoration-none">À
+                                propos</a></li>
+                        <li class="mb-2"><a href="#" class="text-primary text-decoration-none">Offres
+                                d'emploi</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-primary text-decoration-none">Entreprises</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3: Ressources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Ressources</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#blog" class="text-primary text-decoration-none">Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-primary text-decoration-none">Guide
+                                Carrière</a>
+                        </li>
+                        <li class="mb-2"><a href="tarifs.html" class="text-primary text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-primary text-decoration-none">Partenariats</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <ul class="list-unstyled mb-0 small">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Dakar, Sénégal</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> contact@afritalent.com</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +221 33 123 45 67</li>
+                    </ul>
+                </div>
+
+
+                <hr class="mt-5 mb-4 border-secondary">
+
+                <div class="text-center small text-secondary">
+                    &copy; 2026 AfriTalent. Tous droits réservés.
+                </div>
     </footer>
     <!-- Bootstrap 5 via CDN : script JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

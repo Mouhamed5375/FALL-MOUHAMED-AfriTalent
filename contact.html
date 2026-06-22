@@ -12,7 +12,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+JP&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -38,32 +41,33 @@
                         <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <button class="btn15 ">
-                        <a href="contact.html">Rejoindre AfriTalent</a>
-                    </button>
+                    <button class="btn15 "><a href="contact.html">Rejoindre AfriTalent</a></button>   
+                    
+                      <!-- Le toggle Dark/Light  -->
+                    <div class="darklight">
+                        <div class="dark-light">
+                            <i class="fa-solid fa-moon moon"></i>
+                            <i class="fa-regular fa-sun sun"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="darklight">
-                <div class="dark-light">
-                    <i class="fa-solid fa-moon moon"></i>
-                    <i class="fa-regular fa-sun sun"></i>
-                </div>
+
             </div>
-            </div>
-            
+
         </nav>
     </header>
 
     <main>
         <section>
 
-            <div class="bg-dark">
+            <div class="cont">
                 <!-- Formulaire de contact -->
                 <div class="container py-5">
                     <div class="row g-5">
 
                         <!-- SECTION FORMULAIRE -->
                         <div class="col-lg-7">
-                            <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                            <div class=" p-4 p-md-5 rounded shadow-sm" id="Formulaire">
                                 <h2 class="mb-4 fw-bold">Envoyez-nous un message</h2>
 
                                 <!-- Message de succès caché par défaut -->
@@ -83,24 +87,26 @@
                                         <div class="col-md-6">
                                             <label for="firstName" class="form-label">Prénom <span
                                                     class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="firstName">
-                                            <div class="error-feedback" id="firstNameError">Le prénom est requis.</div>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Prénom ">
+                                            <div class="invalid-feedback" id="firstNameError">Le prénom est requis.</div>
                                         </div>
 
                                         <!-- Nom -->
                                         <div class="col-md-6">
                                             <label for="lastName" class="form-label">Nom <span
                                                     class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="lastName">
-                                            <div class="error-feedback" id="lastNameError">Le nom est requis.</div>
+                                            <input type="text" class="form-control" id="lastName" placeholder="Nom ">
+                                            <div class="invalid-feedback" id="lastNameError">Le nom est requis.</div>
                                         </div>
 
                                         <!-- Email -->
                                         <div class="col-12">
                                             <label for="email" class="form-label">Adresse email <span
                                                     class="text-danger">*</span></label>
-                                            <input type="email" class="form-control" id="email">
-                                            <div class="error-feedback" id="emailError">Veuillez entrer une adresse
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Votre adresse email ">
+                                            <div class="invalid-feedback" id="emailError">Veuillez entrer une adresse
                                                 email
                                                 valide.</div>
                                         </div>
@@ -116,7 +122,7 @@
                                                 <option value="partnership">Partenariat</option>
                                                 <option value="other">Autre demande</option>
                                             </select>
-                                            <div class="error-feedback" id="subjectError">Veuillez sélectionner un
+                                            <div class="invalid-feedback" id="subjectError">Veuillez sélectionner un
                                                 sujet.
                                             </div>
                                         </div>
@@ -125,8 +131,9 @@
                                         <div class="col-12">
                                             <label for="message" class="form-label">Message <span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" id="message" rows="5"></textarea>
-                                            <div class="error-feedback" id="messageError">Le message doit contenir au
+                                            <textarea class="form-control" id="message" rows="5"
+                                                placeholder="votre message"></textarea>
+                                            <div class="invalid-feedback" id="messageError">Le message doit contenir au
                                                 moins
                                                 20 caractères.</div>
                                         </div>
@@ -146,15 +153,15 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-between">
 
                             <!-- Bloc Coordonnées -->
-                            <div
-                                class="contact-info-box p-4 p-md-5 mb-4 shadow-sm flex-grow-1 d-flex flex-column justify-content-center">
+                            <div class="contact-info-box p-4 p-md-5 mb-4  flex-grow-1 d-flex flex-column justify-content-center"
+                                id="cor">
                                 <h3 class="h4 mb-4 fw-bold">Nos coordonnées</h3>
 
                                 <div class="d-flex align-items-start mb-4">
                                     <i class="fa-solid fa-location-dot mt-1 me-3 fs-5"></i>
                                     <div>
-                                        <h4 class="h6 mb-1 fw-bold">Adresse</h4>
-                                        <p class="mb-0 text-white-50"> Place de L'independence,<br>20000 Dakar, Senegal
+                                        <h4 class="h6 mb-1 fw-bold ">Adresse</h4>
+                                        <p class="mb-0 text-secondary"> Place de L'independence,<br>20000 Dakar, Senegal
                                         </p>
                                     </div>
                                 </div>
@@ -163,7 +170,7 @@
                                     <i class="fa-solid fa-phone mt-1 me-3 fs-5"></i>
                                     <div>
                                         <h4 class="h6 mb-1 fw-bold">Téléphone</h4>
-                                        <p class="mb-0"><a href="tel:+33123456789">+221 78 123 45 67</a></p>
+                                        <p class="mb-0 text-secondary"><a href="tel:+33123456789 "><span class="num text-secondary">+221 78 123 45 67</span></a></p>
                                     </div>
                                 </div>
 
@@ -171,8 +178,8 @@
                                     <i class="fa-solid fa-envelope mt-1 me-3 fs-5"></i>
                                     <div>
                                         <h4 class="h6 mb-1 fw-bold">Email</h4>
-                                        <p class="mb-0"><a
-                                                href="mailto:contact@notresitefictif.com">contact@afritatents.com</a>
+                                        <p class="mb-0 color-secondary" ><a
+                                                href="mailto:contact@notresitefictif.com"><span class="12 text-secondary">contact@afritatents.com</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -190,80 +197,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row g-4">
 
-                        <!-- Colonne 1: Description -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-3">
-                                <i class="bi bi-lightbulb-fill me-2 text-success"></i>AfriTalent
-                            </h5>
-                            <p class="small">
-                                Connecter les talents africains avec les opportunités mondiales. Nous bâtissons l'avenir
-                                du
-                                recrutement sur le continent.
-                            </p>
-                            <div class="d-flex gap-3 mt-3">
-                                <a href="#" class="text-white-50 fs-5"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="text-white-50 fs-5"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-white-50 fs-5"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#" class="text-white-50 fs-5"><i class="bi bi-instagram"></i></a>
-                            </div>
-                        </div>
-                        <!-- Colonne 2: Liens utiles -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-3">Liens utiles</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="index.html"
-                                        class="text-white-50 text-decoration-none">Accueil</a>
-                                </li>
-                                <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">À
-                                        propos</a></li>
-                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Offres
-                                        d'emploi</a>
-                                </li>
-                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Entreprises</a>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <!-- Colonne 3: Ressources -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-3">Ressources</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#blog" class="text-white-50 text-decoration-none">Blog</a>
-                                </li>
-                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Guide
-                                        Carrière</a>
-                                </li>
-                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
-                                <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Partenariats</a>
-                                </li>
-                            </ul>
-                        </div>
+        </section>
+        <button id="back-to-top" class="back-to-top">↑</button>
 
-                        <!-- Colonne 4: Contact -->
-                        <div class="col-lg-3 col-md-6">
-                            <h5 class="text-white mb-3">Contact</h5>
-                            <ul class="list-unstyled mb-0 small">
-                                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Dakar, Sénégal</li>
-                                <li class="mb-2"><i class="bi bi-envelope me-2"></i> contact@afritalent.com</li>
-                                <li class="mb-2"><i class="bi bi-telephone me-2"></i> +221 33 123 45 67</li>
-                            </ul>
-                        </div>
-                        
-
-                        <hr class="mt-5 mb-4 border-secondary">
-
-                        <div class="text-center small text-secondary">
-                            &copy; 2026 AfriTalent. Tous droits réservés.
-                        </div>
-                    </div>
-                    </footer>
-                </div>
-            </section>
-            <button id="back-to-top" class="back-to-top">↑</button>    
     </main>
+    <footer>
+        <hr class="mt-5 mb-4 border-secondary">
+        <div class="text-center small text-secondary bg-dark">
+            &copy; 2026 AfriTalent. Tous droits réservés.
+        </div>
+    </footer>
 
 
     <!-- Bootstrap 5 via CDN : script JavaScript -->

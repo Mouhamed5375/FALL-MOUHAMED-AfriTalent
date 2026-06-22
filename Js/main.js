@@ -23,6 +23,7 @@ modeToggle.addEventListener("click", () => {
 
 
 
+
 // Sélection de la navbar
 const navbar = document.querySelector('.navbar');
 
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Si l'élément n'est pas encore entré dans la zone visible, on l'ignore
       if (!entry.isIntersecting) return;
 
-      const targetElement = entry.target;
+      const targetElement = entry.target; 
 
       // Cas 1 : Traitement du Fading de section
       if (targetElement.classList.contains("js-fade-in")) {
